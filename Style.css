@@ -1,0 +1,344 @@
+@font-face {
+   font-family: 'ralewaybold';
+   src: url('raleway-bold-webfont.woff2') format('woff2'),
+        url('raleway-bold-webfont.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'ralewayregular';
+   src: url('raleway-regular-webfont.woff2') format('woff2'),
+        url('raleway-regular-webfont.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'rubiklight';
+   src: url('rubik-light-webfont.woff2') format('woff2'),
+        url('rubik-light-webfont.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+
+/* BASIC OPTIONS */
+
+body{
+   font-family: ralewayregular;
+   font-size: 16px;
+}
+
+h1{ 
+   font-size: 64px;
+   font-family: ralewaybold;
+   color: #539676;
+   margin-bottom: 30px;
+}
+
+h2{
+   font-size: 36px;
+   font-family: ralewayregular;
+   color: black;
+}
+
+h3{
+   font-size: 24px;
+   font-family: ralewayregular;
+   color: black;
+}
+
+li{
+   list-style:disc;
+   margin-bottom: 10px;
+}
+
+ul{
+   margin-bottom: 40px;
+}
+
+/* LEFT SIDE */
+
+#Data_Separador hr{
+   margin-top: -30px;
+   margin-bottom: -20px;
+}
+
+#curriculum{
+   display:flex;
+   justify-content: space-between;
+}
+
+#infoIzq{
+   flex-basis: 300px;
+   flex-grow: 1;
+   background: -webkit-linear-gradient(top,#539676,#38979B);
+   color:white;
+}
+
+#infoIzq img{
+   width: 425px;
+   height: 425px;
+   display: block;
+   padding-top: 20px;
+   margin: auto;
+}
+
+#infoIzq h2{
+   color: white;
+   padding-left: 20px;
+}
+
+#infoIzq p{
+   font-family: rubiklight;
+   color: white;
+   padding: 20px;
+}
+
+#infoIzq table{
+   width: 350px;
+   font-family: rubiklight;
+   padding-left: 20px;
+   padding-top: -10px;
+}
+
+#infoIzq td{
+   padding-bottom: 22px;
+   padding-left: 40px;
+   width: 300px;
+}
+
+#infoIzq th{
+   background-size: 40px;
+   background-repeat: no-repeat;
+   width: 90px;
+   height: 60px;
+}
+
+#infoIzq a{
+   color:white;
+   text-decoration: none;
+}
+
+#infoIzq li{
+   font-family: rubiklight;
+}
+
+#Idi{
+   margin-bottom: 60px;
+}
+
+#PreIdi{
+   font-family: ralewaybold;
+}
+
+#Nivell{
+   font-family: ralewayregular;
+   margin-top: 10px;
+   margin-bottom: -30px;
+}
+
+/* PRINCIPAL SECTION */
+
+#infoDer{
+   flex-basis: 650px;
+   flex-grow: 3;
+   padding: 5px 50px;
+}
+
+#DadesAc{
+   font-family: ralewaybold;
+   color:black;
+}
+
+#DAI{
+   margin-bottom: 30px;
+}
+
+#DAL{
+   color:#539676;
+   margin-bottom: -10px;
+}
+
+#DAL a{
+   color:#539676;
+   text-decoration:none;
+}
+
+a{
+   color:black;
+}
+
+/* LOWER SECTION (KNOWLAGE) */
+
+#Con{
+   display:flex;
+   justify-content: space-between;
+}
+
+#Codi{
+   flex-basis: 300px;
+   flex-grow: 1;
+   border: thin solid black;
+   padding-left: 40px;
+   border-top: white;
+   border-right: white;
+   border-bottom: white;
+}
+
+#App{
+   flex-basis: 350px;
+   flex-grow: 1;
+   margin-right: 40px;
+}
+
+/* BARS */
+
+.Barra{
+   position: relative;
+   padding-bottom: 30px;
+}
+
+.Barra .InfoB{
+   font-size: 16px;
+   line-height: 1.1;
+   padding-right: 40px;
+}
+
+.Barra .BValor{
+   font-size: 18px;
+   font-family: rubiklight;
+   position: absolute;
+   right: 0;
+   top: 0;
+   display: block;
+}
+
+.Barra .BTitol{
+   display: block;
+   margin-bottom: 5px;
+}
+
+.Barra .BTotal{
+   background-color:#006eff;
+   width: 0;
+   height: 100%;
+   display: block;
+   position: relative;
+   z-index: 1;
+   border-radius: 5px;
+}
+
+.Barra .LiniaB {
+   height: 5px;
+   position: relative; 
+}
+
+.Barra .LiniaB:after {
+   background-color:#006eff;
+   content: '';
+   opacity: 0.2;
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 0;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px; 
+}
+
+.Barra .BTotal2{
+   background-color:#9a3bff;
+   width: 0;
+   height: 100%;
+   display: block;
+   position: relative;
+   z-index: 1;
+   border-radius: 5px;
+}
+
+.Barra .LiniaB2 {
+   height: 5px;
+   position: relative; 
+}
+
+.Barra .LiniaB2:after {
+   background-color:#9a3bff;
+   content: '';
+   opacity: 0.2;
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 0;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px; 
+}
+
+/* MANU AND LANGUAGE */
+
+#Menu{
+   flex-basis: 150px;
+   background: -webkit-linear-gradient(top,#539676,#38979B);
+}
+
+#Menu p{
+   font-family: rubiklight;
+   text-align: center;
+   color: white;
+}
+
+#Menu hr{
+   margin-top: 70px;
+}
+
+#SelectorIdioma{
+   margin-left: 5px;
+   margin-right: 5px;
+}
+
+select{
+   position: relative;
+   padding-left: 10px;
+   float:left;
+   color: black;
+   background-color: white;
+   border: thin solid black;
+   font-family: rubiklight;
+   width: 140px;
+   height: 30px;
+}
+
+#LlistaMenu p{
+   text-align: left;
+   margin-left: 10px;
+}
+
+#LlistaMenu li{
+   color:white;
+}
+
+#LlistaMenu a{
+   color:white;
+}
+
+/* FOOTER */
+
+#Footer{
+   margin-top: 0px;
+   border: thin solid white;
+   border-left: #38979B;
+   border-right: #38979B;
+   height: 50px;
+   background-color: #38979B;
+}
+
+#Footer p{
+   color:white;
+   font-family: rubiklight;
+   text-align: center;
+}
